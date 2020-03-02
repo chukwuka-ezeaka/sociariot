@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SociaRiot | Profile</title>
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/linearicons.css" rel="stylesheet">
+    <link href="./css/simple-line-icons.css" rel="stylesheet">
+    <link href="./css/dataTables.bootstrap4.min.css" rel="stylesheet" media="none" onload="if(media!=&apos;all&apos;)media=&apos;all&apos;">
+    <link href="./css/theme.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+  </head>
+  <body class="navbar-expand-lg wow fadeIn faster" data-wow-delay="300ms" data-spy="scroll" data-target="#sm" data-offset="60">
+        <div class="container-fluid fixed-top bg-primary" id="topnav">
+        <div class="row collapse show no-gutters d-flex h-100 position-relative sidebar-collapse">
+            <div class="col-3 pr-4 w-sidebar navbar-collapse collapse d-none d-lg-flex">
+                <input class="form-control form-control-sm border-0 font-weight-light rounded-pill" type="text" placeholder="search...">
+            </div>
+            <div class="col">
+                <nav class="navbar navbar-dark navbar-expand px-lg-1">
+                    <a data-toggle="collapse" href="#" data-target=".sidebar-collapse" class="navbar-brand mr-3">
+                        <span class="h4 align-middle mb-0"><span class="lnr lnr-menu"></span></span>
+                    </a>
+                    <a class="navbar-brand" href="#" title="Home"><img src="assets/logo.png" height="40px"></a>
+                    <ul class="navbar-nav  ml-auto mr-2">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link py-0 text-truncate" data-toggle="dropdown">
+                                <span class="align-middle" data-toggle="tooltip" data-placement="left" title="You are logged in">
+                                    Robojo
+                                </span>
+                                <img alt="avatar" src="./assets/m20.jpg" class="avatar mx-1 ml-0 rounded-circle bg-white shadow-sm">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right mt-3 border-light shadow text-uppercase animate-grow-in">
+                                <a class="dropdown-item px-3" href="#profile" data-target="#modalProfile" data-toggle="modal"><span class="lnr lnr-user"></span> Profile</a>
+                                <a class="dropdown-item px-3" href="./inbox.html">
+                                    <span class="lnr lnr-inbox"></span> Inbox <span class="badge badge-primary badge-pill font-weight-light align-middle mb-1 pt-0" title="notify count"><small>3</small></span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item px-3" href="/."><span class="lnr lnr-exit"></span> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid h-100 px-0">
+        <div class="row collapse show no-gutters d-flex h-100 position-relative sidebar-collapse flex-nowrap">
+            <div class="col-3 p-0 h-100 w-sidebar navbar-collapse collapse d-none d-lg-flex sidebar-collapse sidebar">
+                                <!-- fixed sidebar -->
+                <div class="navbar navbar-dark d-block bg-dark text-white position-fixed h-100 align-self-start w-sidebar shadow-sm p-0 pt-2 pb-4 text-uppercase" id="sidebar">
+                    <button data-toggle="collapse" data-target=".sidebar-collapse" class="navbar-brand my-1 mr-3 float-right p-0 d-inline-block d-lg-none btn btn-link">
+                        <span class="h4 align-middle mb-0"><span class="lnr lnr-menu"></span></span>
+                    </button>
+                    <div class="nav flex-column flex-wrap pt-5 mt-3" id="menu1">
+                        <a href="dashboard.html" class="nav-link active"><i class="icon-speedometer icons"></i> Dashboard</a>
+                        <a href="profile.html" class="nav-link"><i class="icon-mustache icons"></i> Profile</a>
+                        <a href="campains.html" class="nav-link"><i class="icon-chart icons"></i> Campaigns</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-0 d-flex flex-column">
+                <main class="p-4 flex-fill">
+                    <div class="row">
+                        <div class="col-xl-9 order-lg-2 col-lg-8">
+                            <ul class="nav nav-tabs small text-uppercase">
+                                <li class="nav-item">
+                                    <a href="profile.html" data-target="#profile" data-toggle="tab" class="nav-link active">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#edit" data-target="#edit" data-toggle="tab" class="nav-link">Edit</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content py-4">
+                                <div class="tab-pane py-2 active" id="profile">
+                                    <div class="row my-2">
+                                        <div class="col-md-6">
+                                            <h6>Industry</h6>
+                                            <p>
+                                                Web Designer, UI/UX Engineer
+                                            </p>
+                                            <h6>About</h6>
+                                            <p>
+                                                Indie music, skiing and hiking. I love the great outdoors.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6>Interests</h6>
+                                            <a href="#" class="badge badge-dark badge-pill">html5</a>
+                                            <a href="#" class="badge badge-dark badge-pill">react</a>
+                                            <a href="#" class="badge badge-dark badge-pill">bootstrap</a>
+                                            <a href="#" class="badge badge-dark badge-pill">responsive-design</a>
+                                            <hr>
+                                            <span class="badge badge-primary"><i class="fa fa-user"></i> 900 Followers</span>
+                                            <span class="badge badge-primary"><i class="fa fa-cog"></i> 43 Forks</span>
+                                            <span class="badge badge-primary"><i class="fa fa-eye"></i> 245 Views</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <h6 class="mt-3"><span class="fa fa-clock-o ion-clock float-right"></span> Recent Activity</h6>
+                                            <table class="table table-hover table-striped table-sm">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="font-weight-bold">Abby</span> joined ACME Project Team in <span class="font-weight-bold">`Collaboration`</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="font-weight-bold">Gary</span> deleted My Board1 in <span class="font-weight-bold">`Discussions`</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="font-weight-bold">Skell</span> deleted his post Look at Why this is.. in <span class="font-weight-bold">`Discussions`</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!--/row-->
+                                </div>
+                                <div class="tab-pane py-2" id="edit">
+                                    <form class="row">
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <label for="text-input">Industry</label>
+                                                <input type="text" value="Developer" id="text-input" class="form-control" placeholder="Title">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email-input">Email</label>
+                                                <input type="email" value="me@achme.com" id="email-input" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="tel-input">Mobile phone</label>
+                                                <input type="tel" value="(555)-222-1212" id="tel-input" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="time-input">Country/Zone</label>
+                                                <select id="time-input" size="0" class="form-control">
+                                                    <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                                                    <option value="Alaska">(GMT-09:00) Alaska</option>
+                                                    <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                                                    <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+                                                    <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
+                                                    <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 d-flex flex-column justify-content-between">
+                                            <div class="form-group">
+                                                <label class="form-label">Interests</label>
+                                                <div class="form-check small">
+                                                    <label class="form-check-label">
+                                                        <input type="checkbox" checked="checked" class="form-check-input"> Html
+                                                    </label>
+                                                </div>
+                                                <div class="form-check small">
+                                                    <label class="form-check-label">
+                                                        <input type="checkbox" checked="checked" class="form-check-input"> bootstrap
+                                                    </label>
+                                                </div>
+                                                <div class="form-check small disabled">
+                                                    <label class="form-check-label">
+                                                        <input type="checkbox" disabled="disabled" class="form-check-input"> Javascript
+                                                    </label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="about">About</label>
+                                                    <textarea rows="3" id="about" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group text-right">
+                                                <div class="form-row">
+                                                    <div class="col-md">
+                                                        <button type="button" class="btn btn-outline-secondary btn-lg d-none d-md-inline" data-dismiss="modal" aria-hidden="true">Close</button>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block">Save Settings</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 order-lg-1 col-lg-4 text-center">
+                            <div class="rounded bg-light border p-xl-4 p-sm-3 p-2 h-100">
+                                <img src="./assets/m20.jpg" class="mx-auto my-2 img-fluid rounded-circle bg-dark" alt="avatar image">
+                                <table class="table small text-left mt-3">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-uppercase">Joined</td>
+                                            <td>6-4-2016</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-uppercase">Last seen</td>
+                                            <td>2 hours ago</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-uppercase">Participations</td>
+                                            <td>340</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-uppercase">Points</td>
+                                            <td>14,583</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                                <footer id="footer" class="p-4 py-5 target">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Benefits</a></li>
+                                <li><a href="#">Developers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3 column">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3 column">
+                            <h6 class="text-primary">Want Updates?</h6>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" title="Enter your email. No spam, we promise!" autocomplete="false" placeholder="Enter your email address">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-outline-primary text-uppercase small" data-toggle="modal" data-target="#modalSmall" type="button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-2 offset-lg-1 col-md-3 offset-md-0 text-right">
+                            <h6 class="text-primary">Satisfaction</h6>
+                            <p class="font-weight-light"><em>If for <b>any</b> reason you are not 100% satisfied, <a href="#">please tell us.</a></em></p>
+                        </div>
+                        <div class="col-12 text-md-right text-center">
+                            <br>
+                            <ul class="list-inline h4">
+                                <li class="list-inline-item pr-1"><a rel="nofollow" href="//twitter.com/ThemesGuide" title="Twitter"><i class="icons icon-social-twitter"></i></a></li>
+                                <li class="list-inline-item pr-1"><a rel="nofollow" href="#" title=""><i class="icons icon-social-instagram"></i></a></li>
+                                <li class="list-inline-item pr-1"><a rel="nofollow" href="#" title="Facebook"><i class="icons icon-social-facebook"></i></a></li>
+                                <li class="list-inline-item"><a rel="nofollow" href="#" title="Dribbble"><i class="icons icon-social-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="text-center small">
+                        <a href="http://themes.guide" class="mb-3">&copy 2020 SociaRiot <i class="icons icon-location-pin"></i></a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <!--scripts loaded here-->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/Chart.min.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap4.min.js"></script>
+    
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

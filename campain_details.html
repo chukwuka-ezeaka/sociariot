@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SociaRiot</title>
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/linearicons.css" rel="stylesheet">
+    <link href="./css/simple-line-icons.css" rel="stylesheet">
+    <link href="./css/dataTables.bootstrap4.min.css" rel="stylesheet" media="none" onload="if(media!=&apos;all&apos;)media=&apos;all&apos;">
+    <link href="./css/theme.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+  </head>
+  <body class="navbar-expand-lg wow fadeIn faster" data-wow-delay="300ms" data-spy="scroll" data-target="#sm" data-offset="60">
+        <div class="container-fluid fixed-top bg-primary" id="topnav">
+        <div class="row collapse show no-gutters d-flex h-100 position-relative sidebar-collapse">
+            <div class="col-3 pr-4 w-sidebar navbar-collapse collapse d-none d-lg-flex">
+                <input class="form-control form-control-sm border-0 font-weight-light rounded-pill" type="text" placeholder="search...">
+            </div>
+            <div class="col">
+                <nav class="navbar navbar-dark navbar-expand px-lg-1">
+                    <a data-toggle="collapse" href="#" data-target=".sidebar-collapse" class="navbar-brand mr-3">
+                        <span class="h4 align-middle mb-0"><span class="lnr lnr-menu"></span></span>
+                    </a>
+                    <a class="navbar-brand" href="#" title="Home"><img src="assets/logo.png" height="40px"></a>
+                    <ul class="navbar-nav  ml-auto mr-2">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link py-0 text-truncate" data-toggle="dropdown">
+                                <span class="align-middle" data-toggle="tooltip" data-placement="left" title="You are logged in">
+                                    Robojo
+                                </span>
+                                <img alt="avatar" src="./assets/m20.jpg" class="avatar mx-1 ml-0 rounded-circle bg-white shadow-sm">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right mt-3 border-light shadow text-uppercase animate-grow-in">
+                                <a class="dropdown-item px-3" href="profile.html" data-target="#modalProfile" data-toggle="modal"><span class="lnr lnr-user"></span> Profile</a>
+                                <a class="dropdown-item px-3" href="./inbox.html">
+                                    <span class="lnr lnr-inbox"></span> Inbox <span class="badge badge-primary badge-pill font-weight-light align-middle mb-1 pt-0" title="notify count"><small>3</small></span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item px-3" href="/." ><span class="lnr lnr-exit"></span> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid h-100 px-0">
+        <div class="row collapse show no-gutters d-flex h-100 position-relative sidebar-collapse flex-nowrap">
+            <div class="col-3 p-0 h-100 w-sidebar navbar-collapse collapse d-none d-lg-flex sidebar-collapse sidebar">
+                                <!-- fixed sidebar -->
+                <div class="navbar navbar-dark d-block bg-dark text-white position-fixed h-100 align-self-start w-sidebar shadow-sm p-0 pt-2 pb-4 text-uppercase" id="sidebar">
+                    <button data-toggle="collapse" data-target=".sidebar-collapse" class="navbar-brand my-1 mr-3 float-right p-0 d-inline-block d-lg-none btn btn-link">
+                        <span class="h4 align-middle mb-0"><span class="lnr lnr-menu"></span></span>
+                    </button>
+                    <div class="nav flex-column flex-wrap pt-5 mt-3" id="menu1">
+                        <a href="#" class="nav-link active"><i class="icon-speedometer icons"></i> Dashboard</a>
+                        <a href="profile.html" class="nav-link"><i class="icon-mustache icons"></i> Profile</a>
+                        <a href="campains.html" class="nav-link"><i class="icon-chart icons"></i> Campaigns</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-0 d-flex flex-column">
+                <main class="p-4 flex-fill">
+                    <div class="wow fadeIn faster" data-wow-delay="100ms">
+                                            <div class="row mt-1">
+                       
+                        <div class="col-xl col-sm-6 pb-3">
+                            <div class="card shadow-sm d-block p-1 h-100">
+                                <div class="row h-100 no-gutters flex-nowrap">
+                                    <div class="col-6 p-3 py-4">
+                                        <h5 class="text-truncate">Cycles</h5>
+                                        <h3>53</h3></div>
+                                    <div class="col bg-light text-success d-flex">
+                                        <h1 class="mb-0 mx-auto align-self-center"><a href="#" class="nav-link pb-0" title="View details"><span class="d-inline-block lnr lnr-history"></span></a></h1></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl col-sm-6 pb-3">
+                            <div class="card shadow-sm d-block p-1 h-100">
+                                <div class="row h-100 no-gutters flex-nowrap">
+                                    <div class="col-6 p-3 py-4">
+                                        <h5 class="text-truncate">Points</h5>
+                                        <h3 class="text-nowrap">69,000</h3>
+                                    </div>
+                                    <div class="col bg-light text-success d-flex">
+                                        <h1 class="mb-0 mx-auto align-self-center"><a href="#" class="nav-link pb-0" title="View details"><span class="d-inline-block lnr lnr-database"></span></a></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl col-sm-6 pb-3">
+                            <div class="card shadow-sm d-block p-1 h-100">
+                                <div class="row h-100 no-gutters flex-nowrap">
+                                    <div class="col-6 p-3 py-4">
+                                        <h5 class="text-truncate">Impressions</h5>
+                                        <h3 class="text-nowrap">35</h3></div>
+                                    <div class="col bg-light text-success d-flex">
+                                        <h1 class="mb-0 mx-auto align-self-center"><a href="#" lass="nav-link pb-0" title="View details"><span class="d-inline-block lnr lnr-heart"></span></a></h1></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl col-sm-6 pb-3">
+                            <div class="card shadow-sm d-block p-1 h-100">
+                                <div class="row h-100 no-gutters flex-nowrap">
+                                    <div class="col-6 p-3 py-4">
+                                        <h5 class="text-truncate">CLicks</h5>
+                                        <h3>10</h3></div>
+                                    <div class="col bg-light text-success d-flex">
+                                        <h1 class="mb-0 mx-auto align-self-center"><a href="#" class="nav-link pb-0" title="View details"><i class="lnr lnr-heart-pulse"></i></a></h1></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <h6 class="my-4 text-muted text-uppercase">Reviews</h6>
+                    <section class="row py-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="card-body h-100 d-flex flex-column">
+                                            <span class="display-4">1,219</span>
+                                            <h6 class="font-weight-light mb-3">There are 4 new reviews</h6>
+                                            <div class="mt-auto p-1">
+                                                <canvas class="w-100" id="chBar"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-xl-auto p-0 mx-3 mx-xl-0 border-bottom border-right border-light"></div>
+                                    <div class="col-xl">
+                                        <ul class="list-unstyled pr-3">
+                                            <li class="p-3">
+                                                <div class="d-flex p-2">
+                                                    <span class="text-secondary display-4 mr-3"><i class="lnr lnr-smile"></i></span>
+                                                    <div class="ml-2">
+                                                        <h3 class="card-title font-weight-light">Positive</h3>
+                                                        <h6 class="font-weight-light">197 Reviews</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="progress" style="height: 5px;">
+                                                    <div class="progress-bar bg-success w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                            <li class="p-3">
+                                                <div class="d-flex p-2">
+                                                    <span class="text-muted display-4 mr-3"><i class="lnr lnr-sad"></i></span>
+                                                    <div class="ml-2">
+                                                        <h3 class="card-title font-weight-light">Negative</h3>
+                                                        <h6 class="font-weight-light">14 Reviews</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="progress" style="height: 5px;">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                            <li class="p-3">
+                                                <div class="d-flex p-2">
+                                                    <span class="text-secondary display-4 mr-3"><i class="lnr lnr-neutral"></i></span>
+                                                    <div class="ml-2">
+                                                        <h3 class="card-title font-weight-light">Neutral</h3>
+                                                        <h6 class="font-weight-light">89 Reviews</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="progress" style="height: 5px;">
+                                                    <div class="progress-bar bg-primary w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Column -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <h6 class="my-4 text-muted text-uppercase">Participants</h6>
+                    <section class="row">
+                        <div class="col py-3">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="datatable-example" class="table table-sm table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Impressions</th>
+                                                    <th>Clicks</th>
+                                                    <th>Start date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Tiger Nixon</td>
+                                                    <td>61</td>
+                                                    <td>61</td>
+                                                    <td>2011/04/25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Garrett Winters</td>
+                                                    <td>63</td>
+                                                    <td>63</td>
+                                                    <td>2011/07/25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Carol Skelly</td>
+                                                    <td>49</td>
+                                                    <td>49</td>
+                                                    <td>2018/12/02</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Yuri Berry</td>
+                                                    <td>40</td>
+                                                    <td>40</td>
+                                                    <td>2009/06/25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tiger Nixon</td>
+                                                    <td>61</td>
+                                                    <td>61</td>
+                                                    <td>2011/04/25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Garrett Winters</td>
+                                                    <td>63</td>
+                                                    <td>63</td>
+                                                    <td>2011/07/25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Carol Skelly</td>
+                                                    <td>49</td>
+                                                    <td>49</td>
+                                                    <td>2018/12/02</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Yuri Berry</td>
+                                                    <td>40</td>
+                                                    <td>40</td>
+                                                    <td>2009/06/25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tiger Nixon</td>
+                                                    <td>61</td>
+                                                    <td>61</td>
+                                                    <td>2011/04/25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Garrett Winters</td>
+                                                    <td>63</td>
+                                                    <td>63</td>
+                                                    <td>2011/07/25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Carol Skelly</td>
+                                                    <td>49</td>
+                                                    <td>49</td>
+                                                    <td>2018/12/02</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Yuri Berry</td>
+                                                    <td>40</td>
+                                                    <td>40</td>
+                                                    <td>2009/06/25</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                                <footer id="footer" class="p-4 py-5 target">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Benefits</a></li>
+                                <li><a href="#">Developers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3 column">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3 column">
+                            <h6 class="text-primary">Want Updates?</h6>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" title="Enter your email. No spam, we promise!" autocomplete="false" placeholder="Enter your email address">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-outline-warning text-uppercase small" data-toggle="modal" data-target="#modalSmall" type="button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-2 offset-lg-1 col-md-3 offset-md-0 text-right">
+                            <h6 class="text-primary">Satisfaction</h6>
+                            <p class="font-weight-light"><em>If for <b>any</b> reason you are not 100% satisfied, <a href="#">please tell us.</a></em></p>
+                        </div>
+                        <div class="col-12 text-md-right text-center">
+                            <br>
+                            <ul class="list-inline h4">
+                                <li class="list-inline-item pr-1"><a rel="nofollow" href="//twitter.com/ThemesGuide" title="Twitter"><i class="icons icon-social-twitter"></i></a></li>
+                                <li class="list-inline-item pr-1"><a rel="nofollow" href="#" title=""><i class="icons icon-social-instagram"></i></a></li>
+                                <li class="list-inline-item pr-1"><a rel="nofollow" href="#" title="Facebook"><i class="icons icon-social-facebook"></i></a></li>
+                                <li class="list-inline-item"><a rel="nofollow" href="#" title="Dribbble"><i class="icons icon-social-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="text-center small">
+                        <a href="http://themes.guide" class="mb-3">&copy 2020 SociaRiot <i class="icons icon-location-pin"></i></a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <!--scripts loaded here-->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/Chart.min.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap4.min.js"></script>
+    
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

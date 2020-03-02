@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SociaRiot } Campaigns</title>
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/linearicons.css" rel="stylesheet">
+    <link href="./css/simple-line-icons.css" rel="stylesheet">
+    <link href="./css/dataTables.bootstrap4.min.css" rel="stylesheet" media="none" onload="if(media!=&apos;all&apos;)media=&apos;all&apos;">
+    <link href="./css/theme.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+  </head>
+  <body class="navbar-expand-lg wow fadeIn faster" data-wow-delay="300ms" data-spy="scroll" data-target="#sm" data-offset="60">
+        <div class="container-fluid fixed-top bg-primary" id="topnav">
+        <div class="row collapse show no-gutters d-flex h-100 position-relative sidebar-collapse">
+            <div class="col-3 pr-4 w-sidebar navbar-collapse collapse d-none d-lg-flex">
+                <input class="form-control form-control-sm border-0 font-weight-light rounded-pill" type="text" placeholder="search...">
+            </div>
+            <div class="col">
+                <nav class="navbar navbar-dark navbar-expand px-lg-1">
+                    <a data-toggle="collapse" href="#" data-target=".sidebar-collapse" class="navbar-brand mr-3">
+                        <span class="h4 align-middle mb-0"><span class="lnr lnr-menu"></span></span>
+                    </a>
+                    <a class="navbar-brand" href="#" title="Home"><img src="assets/logo.png" height="40px"></a>
+                    <ul class="navbar-nav  ml-auto mr-2">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link py-0 text-truncate" data-toggle="dropdown">
+                                <span class="align-middle" data-toggle="tooltip" data-placement="left" title="You are logged in">
+                                    Robojo
+                                </span>
+                                <img alt="avatar" src="./assets/m20.jpg" class="avatar mx-1 ml-0 rounded-circle bg-white shadow-sm">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right mt-3 border-light shadow text-uppercase animate-grow-in">
+                                <a class="dropdown-item px-3" href="profile.html" data-target="#modalProfile" data-toggle="modal"><span class="lnr lnr-user"></span> Profile</a>
+                                <a class="dropdown-item px-3" href="./inbox.html">
+                                    <span class="lnr lnr-inbox"></span> Inbox <span class="badge badge-primary badge-pill font-weight-light align-middle mb-1 pt-0" title="notify count"><small>3</small></span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item px-3" href="/." ><span class="lnr lnr-exit"></span> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid h-100 px-0">
+        <div class="row collapse show no-gutters d-flex h-100 position-relative sidebar-collapse flex-nowrap">
+            <div class="col-3 p-0 h-100 w-sidebar navbar-collapse collapse d-none d-lg-flex sidebar-collapse sidebar">
+                                <!-- fixed sidebar -->
+                <div class="navbar navbar-dark d-block bg-dark text-white position-fixed h-100 align-self-start w-sidebar shadow-sm p-0 pt-2 pb-4 text-uppercase" id="sidebar">
+                    <button data-toggle="collapse" data-target=".sidebar-collapse" class="navbar-brand my-1 mr-3 float-right p-0 d-inline-block d-lg-none btn btn-link">
+                        <span class="h4 align-middle mb-0"><span class="lnr lnr-menu"></span></span>
+                    </button>
+                    <div class="nav flex-column flex-wrap pt-5 mt-3" id="menu1">
+                        <a href="dashboard.html" class="nav-link"><i class="icon-speedometer icons"></i> Dashboard</a>
+                        <a href="profile.html" class="nav-link"><i class="icon-mustache icons"></i> Profile</a>
+                        <a href="#" class="nav-link active"><i class="icon-chart icons"></i> Campaigns</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-0 d-flex flex-column">
+                <main class="p-4 flex-fill">
+                    <div class="card shadow-sm">
+                        <div class="row">
+                        
+                            <div class="col-xl-3 col-lg-4 py-3 wow fadeIn faster bg-secondary" data-wow-delay="150ms">
+                            
+                                <h4 class="font-weight-light">
+                                    New
+                                </h4>
+                                <h4 class="font-weight-light">
+                                Campaign
+                                </h4>
+                            </div>
+                            <div class="col-lg-8 py-3">
+                                <form class="row">
+                                    <div class="col-xl-6">
+                                        <div class="form-group">
+                                            <input type="text"  id="text-input" class="form-control" placeholder="Title">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea rows="3"  class="form-control" placeholder="Description"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" id="tel-input" class="form-control" placeholder="Price">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 d-flex flex-column justify-content-between">
+                                        <div class="form-group">
+                                            <label>Duration/cycle</label>
+                                            <div class="form-group">
+                                                <input type="number" id="tel-input" class="form-control" placeholder="Days" multiple>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Camapign images</label>
+                                            <div class="form-group">
+                                                <input type="file" id="tel-input" class="form-control" placeholder="Price" multiple>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="form-group text-right">
+                                            <div class="form-row">
+                                                <div class="col-md">
+                                                    <button type="button" class="btn btn-outline-warning btn-md btn-block" data-target="#paymentModal" data-toggle="modal">Next</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <section class="row">
+                        <div class="col-xl-12 col-md-12 py-3 wow fadeInUp" data-wow-delay="200ms">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body">
+                                    <!-- tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item"><a href="#tab1" class="nav-link text-uppercase active" data-toggle="tab" data-target="#tab1" role="tab">Active Campaigns</a></li>
+                                        <li class="nav-item"><a href="#tab2" class="nav-link text-uppercase" data-toggle="tab" data-target="#tab2" role="tab">All Campaings</a></li>
+                                    </ul>
+                                    <div class="tab-content py-4">
+                                        <div class="tab-pane active" id="tab1" role="tabpanel">
+                                        <div class="card shadow-sm mb-3">
+                                            <div class="card-body">
+                                                <span class="float-right text-muted small">11.12.2019T8:02:10.35Z</span>
+                                                <h5 class="card-title"><span class="badge badge-pill bg-primary">&#xA0;</span> FCMB</h5>
+                                                <p class="card-text">The process completed, but the write disk is at 10% remaining. <a href="campain_details.html" class="btn btn-sm btn-outline-warning align-bottom ml-3">Details</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="card shadow-sm mb-3">
+                                            <div class="card-body">
+                                                <span class="float-right text-muted small">11.12.2019T8:00:20.10Z</span>
+                                                <h5 class="card-title"><span class="badge badge-pill bg-danger">&#xA0;</span>AIRTEL</h5>
+                                                <p class="card-text">The process completed successfully. <a href="campain_details.html" class="btn btn-sm btn-outline-warning align-bottom ml-3">Details</a></p>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                        <div class="tab-pane active" id="tab2" role="tabpanel">
+                                            <div class="card shadow-sm mb-3">
+                                                <div class="card-body">
+                                                    <span class="float-right text-muted small">11.12.2019T8:02:10.35Z</span>
+                                                    <h5 class="card-title"><span class="badge badge-pill bg-warning">&#xA0;</span> Nestle</h5>
+                                                    <p class="card-text">The process completed, but the write disk is at 10% remaining. <a href="campain_details.html" class="btn btn-sm btn-outline-warning align-bottom ml-3">Details</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="card shadow-sm mb-3">
+                                                <div class="card-body">
+                                                    <span class="float-right text-muted small">11.12.2019T8:00:20.10Z</span>
+                                                    <h5 class="card-title"><span class="badge badge-pill bg-success">&#xA0;</span> Stanel Bread</h5>
+                                                    <p class="card-text">The process completed successfully. <a href="campain_details.html" class="btn btn-sm btn-outline-warning align-bottom ml-3">Details</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="card shadow-sm mb-3">
+                                                <div class="card-body">
+                                                    <span class="float-right text-muted small">11.12.2019T7:59:33.12Z</span>
+                                                    <h5 class="card-title"><span class="badge badge-pill bg-success">&#xA0;</span> Uber</h5>
+                                                    <p class="card-text">The process completed successfully.<a href="campain_details.html" class="btn btn-sm btn-outline-warning align-bottom ml-3">Details</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="card shadow-sm mb-3">
+                                                <div class="card-body">
+                                                    <span class="float-right text-muted small">11.12.2019T7:57:04.13Z</span>
+                                                    <h5 class="card-title"><span class="badge badge-pill bg-danger">&#xA0;</span> Admine</h5>
+                                                    <p class="card-text">The process completed successfully <a href="campain_details.html" class="btn btn-sm btn-outline-warning align-bottom ml-3">Details</a></p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        <!-- /tab-pane -->
+                                    </div>
+                                    <!-- /tab-content -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-xl-3 col-md-4 py-3 d-sm-block d-none wow fadeInUp" data-wow-delay="200ms">
+                            <div class="card shadow-sm bg-primary border-0 h-100">
+                                <div class="card-body d-flex flex-column justify-content-between text-white">
+                                    <h4 class="font-weight-light">
+                                        <div class="float-right dropdown show"><a href="#" data-toggle="dropdown" class="text-white dropdown-toggle"><i class="lnr lnr-cog"></i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a href="#" class="dropdown-item">Action</a>
+                                                <a href="#" class="dropdown-item">Another action</a>
+                                            </div>
+                                        </div>
+                                        Leads
+                                    </h4>
+                                    <div class="text-center py-2">
+                                        <canvas class="mx-auto" id="chLine1" height="120"></canvas>
+                                        May 2018
+                                    </div>
+                                    <div class="text-center py-2">
+                                        <canvas class="mx-auto" id="chLine2" height="120"></canvas>
+                                        Jun 2018
+                                    </div>
+                                    <div class="text-center py-2">
+                                        <canvas class="mx-auto" id="chLine3" height="120"></canvas>
+                                        July 2018
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </section>
+                </main>
+                                <footer id="footer" class="p-4 py-5 target">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Benefits</a></li>
+                                <li><a href="#">Developers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3 column">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3 column">
+                            <h6 class="text-primary">Want Updates?</h6>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" title="Enter your email. No spam, we promise!" autocomplete="false" placeholder="Enter your email address">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-outline-warning text-uppercase small" data-toggle="modal" data-target="#modalSmall" type="button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-2 offset-lg-1 col-md-3 offset-md-0 text-right">
+                            <h6 class="text-primary">Satisfaction</h6>
+                            <p class="font-weight-light"><em>If for <b>any</b> reason you are not 100% satisfied, <a href="#">please tell us.</a></em></p>
+                        </div>
+                        <div class="col-12 text-md-right text-center">
+                            <br>
+                            <ul class="list-inline h4">
+                                <li class="list-inline-item pr-1"><a rel="nofollow" href="//twitter.com/ThemesGuide" title="Twitter"><i class="icons icon-social-twitter"></i></a></li>
+                                <li class="list-inline-item pr-1"><a rel="nofollow" href="#" title=""><i class="icons icon-social-instagram"></i></a></li>
+                                <li class="list-inline-item pr-1"><a rel="nofollow" href="#" title="Facebook"><i class="icons icon-social-facebook"></i></a></li>
+                                <li class="list-inline-item"><a rel="nofollow" href="#" title="Dribbble"><i class="icons icon-social-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="text-center small">
+                        <a href="http://themes.guide" class="mb-3">&copy 2020 SociaRiot <i class="icons icon-location-pin"></i></a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <div id="paymentModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-center">Credit Card Payment</h3>
+                    <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">&#xD7;</button>
+                </div>
+                <div class="modal-body py-4">
+                     <!-- form card cc payment -->
+                     <div class="card card-outline-secondary">
+                        <div class="card-body">
+                            <form class="form" role="form" autocomplete="off">
+                                <div class="form-group">
+                                    <label for="cc_name">Card Holder&apos;s Name</label>
+                                    <input type="text" class="form-control" id="cc_name" pattern="\w+ \w+.*" title="First and last name" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label>Card Number</label>
+                                    <input type="text" class="form-control" autocomplete="off" maxlength="20" pattern="\d{16}" title="Credit card number" required>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-12">Card Exp. Date</label>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="cc_exp_mo" size="0">
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="cc_exp_yr" size="0">
+                                            <option>2018</option>
+                                            <option>2019</option>
+                                            <option>2020</option>
+                                            <option>2021</option>
+                                            <option>2022</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" autocomplete="off" maxlength="3" pattern="\d{3}" title="Three digits at back of your card" required placeholder="CVC">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-md-12">Amount</label>
+                                </div>
+                                <div class="form-inline">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+                                        <input type="text" class="form-control text-right" id="exampleInputAmount" placeholder="39">
+                                        <div class="input-group-append"><span class="input-group-text">.00</span></div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <button type="reset" class="btn btn-default btn-md btn-block">Cancel</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-primary btn-md btn-block">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /form card cc payment -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--scripts loaded here-->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/Chart.min.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap4.min.js"></script>
+    
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
